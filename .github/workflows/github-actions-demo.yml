@@ -4,6 +4,12 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: self-hosted
     steps:
+      - name: trigger single Job
+        with:
+          url: "http://192.168.1.120:8080"
+          user: "jenkinsuser1"
+          token: 118dc6f217abb4a020a9765c11ac088d3b
+          job: "test1"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event"
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
