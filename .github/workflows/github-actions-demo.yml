@@ -8,9 +8,9 @@ jobs:
         uses: jabbukka/jenkins-trigger@main
         with:
           url: "http://192.168.1.120"
-          user: "jenkinsuser1"
-          token: "11f2c3b8b9c1cff806c6f672049d696d87"
-          job: "test1"
+          user_name: "jenkinsuser1"
+          api_token: "11f2c3b8b9c1cff806c6f672049d696d87"
+          job_name: "test1"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event"
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
